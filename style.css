@@ -1,0 +1,516 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+:root {
+  --cor-de-fundo-escuro: #1d1d1d;
+  --cor-de-fundo-claro: #f2f2f2;
+  --cor-branco: #f2f2f2;
+  --cor-cinza-escuro: #2c2c2c;
+  --cor-cinza-claro: #707070;
+  --cor-cinza-medio: #3a3a3a;
+  --degrade-cinza: ;
+  --cor-verde: #86bc25;
+
+  --fonte-primaria: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(img/bg_logo_peixe_fundo_escuro.svg) top right no-repeat;
+  background-color: var(--cor-de-fundo-escuro);
+  overflow-x: hidden;
+  hyphens: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+p {
+  margin: 1em 0;
+}
+
+.verde {
+  color: var(--cor-verde);
+}
+
+.sublinhado {
+  text-decoration: underline;
+}
+
+/* BANNER INICIAL */
+
+.container {
+}
+
+.banner {
+  width: 70%;
+  margin: 8em auto 6em auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__titulo {
+  font-family: var(--fonte-primaria);
+  font-size: 80px;
+  font-weight: 700;
+  color: var(--cor-branco);
+  text-align: left;
+  line-height: 1.5em;
+  text-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.botao__projeto {
+  background-color: var(--cor-verde);
+  border: none;
+  width: 40%;
+  color: var(--cor-cinza-escuro);
+  border-radius: 20px;
+  padding: 1em;
+  margin: 2em 0 2em 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.botao__projeto-link {
+  font-family: var(--fonte-primaria);
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--cor-cinza-escuro);
+  text-decoration: none;
+}
+
+.botao__projeto2 {
+  background-color: var(--cor-verde);
+  border: none;
+  width: 25%;
+  color: var(--cor-cinza-escuro);
+  border-radius: 20px;
+  padding: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
+  margin: 1em 0 1em 0;
+}
+
+.botao__projeto-link2 {
+  font-family: var(--fonte-primaria);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--cor-cinza-escuro);
+  text-decoration: none;
+}
+
+.botao__projeto.pressed {
+  transform: translateY(2px);
+  background-color: var(--cor-de-fundo-claro);
+}
+
+.container_whats_arrow {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow {
+  margin-top: 1em;
+  animation: arrowMovement 1s infinite alternate;
+}
+
+.ico_whats {
+  animation: arrowMovement 1s infinite alternate;
+  animation-delay: 0.2s;
+  position: fixed;
+}
+
+.botao__projeto.active {
+  background-color: var(--cor-cinza-claro);
+  transform: translateY(2px);
+}
+
+@keyframes arrowMovement {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+/* EMPRESA*/
+
+.empresa {
+  width: 70%;
+  margin: 6em auto 2em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo_horizontal {
+}
+
+.empresa-texto {
+  font-family: var(--fonte-primaria);
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--cor-branco);
+  padding: 0 1em;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.empresa-texto {
+  font-size: 24px;
+  font-weight: 300;
+  padding: 2em 1em;
+}
+
+.equipe_pez {
+  margin: 4em 0;
+  padding: 0 1em;
+  border-radius: 20px;
+  background-color: var(--cor-cinza-medio);
+}
+
+/* SERVICOS */
+
+.servicos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servico_titulo {
+  font-family: var(--fonte-primaria);
+  font-size: 42px;
+  color: var(--cor-branco);
+  display: flex;
+  text-align: center;
+  line-height: 1.5em;
+  margin: 2em;
+  width: 70vw;
+}
+
+/* COMO O STUDIO TRABALHA */
+
+.banner-studiotb {
+  margin: 8em 1.5em 1.5em 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner__titulo-studio {
+  font-family: var(--fonte-primaria);
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--cor-branco);
+  padding: 0 1em;
+  text-align: center;
+  line-height: 1.5em;
+  text-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner__subtitulo-studiotb {
+  font-family: var(--fonte-primaria);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--cor-branco);
+  text-align: center;
+  line-height: 1.5em;
+  padding: ;
+  width: 50vw;
+}
+
+.servicos-studiotb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vw;
+}
+
+/*CARDS E RODAPE*/
+
+.cards_processos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.studio_process {
+  border: transparent;
+  border-radius: 20px;
+  background-color: var(--cor-cinza-medio);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fonte-primaria);
+  font-weight: 500;
+  color: var(--cor-branco);
+  align-items: center;
+  padding: 1em;
+  margin: 1em 1em 2em 1em;
+}
+
+.cards_img {
+  align-items: center;
+}
+
+.cards_titulo {
+  font-size: 40px;
+  line-height: 1.5em;
+  color: var(--cor-verde);
+}
+
+.cards-processos {
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.5em;
+  width: 70vw;
+}
+
+.cards_texto {
+  width: 80%;
+  margin: auto;
+  font-size: 24px;
+}
+
+/* BANNER FINAL */
+
+.banner_final-stdprocess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner__titulo2-stdprocess {
+  font-family: var(--fonte-primaria);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--cor-branco);
+  padding: 0 1em;
+  margin: 2.5em 0 0 0;
+  text-align: center;
+  line-height: 1.5em;
+  text-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* BANNER FINAL */
+
+.banner_final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8em 0 4em 0;
+}
+
+.banner__titulo2 {
+  font-family: var(--fonte-primaria);
+  font-size: 80px;
+  font-weight: 700;
+  color: var(--cor-branco);
+  padding: 0 1em;
+
+  text-align: left;
+  line-height: 1.5em;
+  text-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner__subtitulo {
+  font-family: var(--fonte-primaria);
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--cor-branco);
+  text-align: center;
+  line-height: 1.5em;
+  margin: 0 2em;
+  width: 70vw;
+}
+
+/* CONTATO */
+
+.banner-contato {
+  margin: 8em 1.5em 3em 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__titulo-contato {
+  font-family: var(--fonte-primaria);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--cor-branco);
+  padding: 1em;
+  text-align: center;
+  line-height: 1.5em;
+  text-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner__subtitulo-contato {
+  font-family: var(--fonte-primaria);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--cor-branco);
+  text-align: center;
+  line-height: 1.5em;
+  padding: 0 1em;
+}
+
+/*RODAPE*/
+
+.rodape {
+  border: transparent;
+  border-radius: 20px;
+  background-color: var(--cor-cinza-medio);
+
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fonte-primaria);
+  font-weight: 500;
+  color: var(--cor-branco);
+  align-items: center;
+  padding: 1em 0;
+  margin: 1em;
+}
+
+.logo_rodape {
+  margin-top: 1em;
+  align-items: center;
+}
+
+.midias {
+  display: flex;
+  align-items: center;
+  padding: 1.5em;
+  justify-content: space-between;
+}
+
+.midias_link {
+  text-decoration: none;
+  color: var(--cor-branco);
+  font-size: 16px;
+  padding: 0 1em;
+}
+
+.rodape p {
+  font-size: 12px;
+  padding: 1em;
+  text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .banner {
+  }
+
+  .banner__titulo {
+  }
+
+  .botao__projeto {
+  }
+
+  .botao__projeto-link {
+  }
+
+  /*BANNER EMPRESA*/
+
+  .empresa img {
+  }
+
+  .empresa-texto {
+  }
+
+  .equipe_pez {
+  }
+
+  /*SERVICOS*/
+
+  .servico_titulo {
+  }
+
+  /*BANNER FINAL*/
+
+  .banner__titulo2 {
+  }
+
+  .banner__subtitulo {
+  }
+
+  .banner_final {
+  }
+
+  .banner__titulo2 {
+  }
+
+  .banner__subtitulo {
+  }
+
+  /*RODAPE*/
+
+  .rodape {
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .banner {
+  }
+
+  .banner__titulo {
+  }
+
+  .banner__subtitulo {
+  }
+
+  .botao__projeto {
+  }
+
+  .logo_horizontal {
+  }
+
+  /*BANNER EMPRESA*/
+
+  .empresa {
+  }
+
+  .empresa img {
+  }
+
+  .empresa-texto {
+  }
+
+  /*SERVICOS*/
+
+  .servico_titulo {
+  }
+
+  /*BANNER FINAL*/
+
+  .banner__titulo2 {
+  }
+
+  .banner__subtitulo {
+  }
+}
+
+@media screen and (min-width: 380px) {
+  .banner {
+  }
+
+  .banner__titulo {
+  }
+
+  .botao__projeto {
+  }
+}

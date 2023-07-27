@@ -1,0 +1,42 @@
+.carousel {
+  display: flex;
+  padding: 1em 0em;
+
+  overflow: hidden;
+  border-style: solid;
+  border-width: 2px 0px;
+  border-color: var(--cor-branco);
+  align-items: center;
+  max-width: 100%;
+}
+
+#carousel-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  animation: carouselAnimation 30s linear infinite;
+}
+
+#carousel-list li {
+  display: inline-block;
+  margin-right: 20px;
+  font-family: var(--fonte-primaria);
+  color: var(--cor-branco);
+  font-size: 60px;
+  font-weight: 300;
+}
+
+@keyframes carouselAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #carousel-list li {
+  }
+}

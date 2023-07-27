@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <filter id="Caminho_243" x="0" y="0" width="64" height="64" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_103" data-name="Grupo 103" transform="translate(-270 -2419)">
+    <g transform="matrix(1, 0, 0, 1, 270, 2419)" filter="url(#Caminho_243)">
+      <path id="Caminho_243-2" data-name="Caminho 243" d="M20,0A20,20,0,1,1,0,20,20,20,0,0,1,20,0Z" transform="translate(12 8)" fill="#2c2c2c"/>
+    </g>
+    <path id="Linha_21" data-name="Linha 21" d="M18,2H0V-2H18Z" transform="translate(293.5 2447.701)" fill="#85bc24"/>
+    <path id="Linha_22" data-name="Linha 22" d="M2,18H-2V0H2Z" transform="translate(302.37 2438.83)" fill="#85bc24"/>
+  </g>
+</svg>
