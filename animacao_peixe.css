@@ -33,10 +33,15 @@
   }
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 300px) and (max-width: 700px) {
   .peixe {
+    width: 125px;
+  }
+  .texto_peixe {
+    width: 250px;
   }
 
-  .texto_peixe {
+  .container_peixe {
+    height: 100vw;
   }
 }

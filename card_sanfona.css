@@ -1,8 +1,6 @@
 /**/
 
 .card {
-  width: 200px;
-  border: 1px solid #ccc;
   width: 30vw;
   overflow: hidden;
 }
@@ -91,30 +89,28 @@
 }
 
 /**/
+/*MEDIA QUERY*/
 
-@media screen and (min-width: 680px) {
+/*👉Versão Desktop👈*/
+@media screen and (min-width: 1300px) {
+}
+
+/*👉Versão Mobile tablet👈*/
+@media screen and (min-width: 720px) and (max-width: 1024px) {
   .card,
   .card2 {
-  }
-
-  .card_btn {
-  }
-
-  .card-content-item {
+    width: 60vw;
   }
 }
 
-@media screen and (min-width: 1280px) {
+/*👉Versão Mobile Cel👈*/
+@media screen and (min-width: 300px) and (max-width: 700px) {
   .card,
   .card2 {
+    width: 80vw;
   }
+}
 
-  .card_btn {
-  }
-
-  .card-content-item {
-  }
-
-  .exp_btn {
-  }
+/*👉Versão IMPRESSÃO👈*/
+@media print and (max-height: 280mm) {
 }

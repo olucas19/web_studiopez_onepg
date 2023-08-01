@@ -207,7 +207,7 @@ p {
 /* COMO O STUDIO TRABALHA */
 
 .banner-studiotb {
-  margin: 8em 1.5em 1.5em 1.5em;
+  margin: 20em 1.5em 1.5em 1.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -231,7 +231,7 @@ p {
   color: var(--cor-branco);
   text-align: center;
   line-height: 1.5em;
-  padding: ;
+
   width: 50vw;
 }
 
@@ -411,106 +411,127 @@ p {
   text-align: center;
 }
 
-@media screen and (min-width: 1280px) {
+/*MEDIA QUERY*/
+
+/*👉Versão Desktop👈*/
+
+@media screen and (min-width: 1900px) {
   .banner {
+    margin: 10em auto 18em auto;
   }
 
   .banner__titulo {
-  }
-
-  .botao__projeto {
-  }
-
-  .botao__projeto-link {
-  }
-
-  /*BANNER EMPRESA*/
-
-  .empresa img {
-  }
-
-  .empresa-texto {
-  }
-
-  .equipe_pez {
-  }
-
-  /*SERVICOS*/
-
-  .servico_titulo {
-  }
-
-  /*BANNER FINAL*/
-
-  .banner__titulo2 {
-  }
-
-  .banner__subtitulo {
-  }
-
-  .banner_final {
-  }
-
-  .banner__titulo2 {
-  }
-
-  .banner__subtitulo {
-  }
-
-  /*RODAPE*/
-
-  .rodape {
+    font-size: 100px;
   }
 }
 
-@media screen and (min-width: 680px) {
-  .banner {
-  }
+@media screen and (min-width: 1300px) {
+}
 
+/*👉Versão Mobile tablet👈*/
+@media screen and (min-width: 720px) and (max-width: 1024px) {
   .banner__titulo {
+    font-size: 60px;
+  }
+  .botao__projeto {
+    width: 80%;
+  }
+  .container_peixe {
+    height: 100vw;
   }
 
-  .banner__subtitulo {
+  .banner__subtitulo-studiotb {
+    width: 70vw;
+  }
+
+  .botao__projeto2 {
+    width: 50vw;
+  }
+}
+
+/*👉Versão Mobile Cel👈*/
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  .banner__titulo {
+    font-size: 48px;
   }
 
   .botao__projeto {
+    width: 80vw;
+  }
+  .botao__projeto-link {
+    font-size: 24px;
   }
 
   .logo_horizontal {
+    width: 70vw;
   }
 
-  /*BANNER EMPRESA*/
-
-  .empresa {
-  }
-
-  .empresa img {
+  .equipe_pez {
+    padding: 0px;
+    margin: 0;
   }
 
   .empresa-texto {
+    font-size: 24px;
   }
-
-  /*SERVICOS*/
-
   .servico_titulo {
+    font-size: 24px;
+    width: 80vw;
   }
 
-  /*BANNER FINAL*/
+  .continue {
+    display: none;
+  }
+
+  .cards_titulo {
+    font-size: 32px;
+  }
+
+  .banner-studiotb {
+    margin-top: 10em;
+  }
+
+  .banner__titulo-studio {
+    font-size: 42px;
+    line-height: 1.25em;
+    margin-bottom: 0.25em;
+  }
+
+  .banner__subtitulo-studiotb {
+    width: 80vw;
+    font-weight: 300;
+  }
 
   .banner__titulo2 {
+    text-align: center;
+    font-size: 48px;
+    line-height: 1em;
+    margin-bottom: 0.25em;
   }
 
+  .cards_titulo {
+    line-height: 1.25em;
+    margin-bottom: 0.5em;
+  }
+
+  .cards_texto {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.25em;
+  }
   .banner__subtitulo {
+    font-size: 24px;
+  }
+
+  .botao__projeto2 {
+    width: 80vw;
+  }
+
+  .botao__projeto-link2 {
+    font-size: 24px;
   }
 }
 
-@media screen and (min-width: 380px) {
-  .banner {
-  }
-
-  .banner__titulo {
-  }
-
-  .botao__projeto {
-  }
+/*👉Versão IMPRESSÃO👈*/
+@media print and (max-height: 280mm) {
 }

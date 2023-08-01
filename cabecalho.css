@@ -4,7 +4,7 @@
   align-items: center;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   border: 1px solid red;
 }
 
@@ -62,7 +62,7 @@
   background-color: var(--cor-de-fundo-claro);
   color: var(--cor-cinza-escuro);
   font-family: var(--fonte-primaria);
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 500;
   border: none;
   cursor: pointer;

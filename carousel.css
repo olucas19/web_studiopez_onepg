@@ -7,7 +7,7 @@
   border-width: 2px 0px;
   border-color: var(--cor-branco);
   align-items: center;
-  max-width: 100%;
+  max-width: 100vw;
 }
 
 #carousel-list {
@@ -38,5 +38,10 @@
 
 @media screen and (min-width: 1280px) {
   #carousel-list li {
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  .carousel {
   }
 }
