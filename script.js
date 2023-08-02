@@ -1,31 +1,15 @@
-// fazer o MENU aparecer e ao clicar em Fechar ele desaparecer
-
-document.addEventListener("DOMContentLoaded", function () {
-  const menuCheckbox = document.getElementById("menu");
-  const fecharMenuButton = document.querySelector(
-    ".cabecalho__menu-hamburguer"
-  );
-  const listaMenu = document.querySelector(".lista-menu");
-
-  fecharMenuButton.addEventListener("click", function () {
-    menuCheckbox.checked = true;
-    listaMenu.style.display = "block";
-  });
-});
+function menuShow() {
+  let menuMobile = document.querySelector(".mobile-menu");
+  if (menuMobile.classList.contains("open")) {
+    menuMobile.classList.remove("open");
+    document.querySelector(".icon").src = "img/Menu.svg";
+  } else {
+    menuMobile.classList.add("open");
+    document.querySelector(".icon").src = "img/Fechar.png";
+  }
+}
 
 // fazer botao afundar e voltar,  e mudar de cor
-
-document.addEventListener("DOMContentLoaded", function () {
-  const menuCheckbox = document.getElementById("menu");
-  const fecharMenuButton = document.querySelector(".fechar-menu");
-  const listaMenu = document.querySelector(".lista-menu");
-
-  fecharMenuButton.addEventListener("click", function () {
-    menuCheckbox.checked = false;
-    listaMenu.style.display = "none";
-  });
-});
-
 function pressButton() {
   var button = document.querySelector(".botao__projeto");
   button.classList.add("pressed");
