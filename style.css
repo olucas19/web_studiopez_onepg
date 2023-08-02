@@ -106,6 +106,21 @@ header {
   display: none;
 }
 
+/* Estilo padrão do link do menu */
+.menu li a {
+  /* color: #333; Cor do texto */
+  text-decoration: none; /* Remover sublinhado do link */
+  transition: color 0.2s; /* Transição suave de cor durante o hover */
+}
+
+/* Estilo do link do menu quando o mouse está sobre ele */
+.menu li a:hover {
+  color: var(
+    --cor-verde
+  ); /* Cor do texto no hover (pode ser alterada para a cor desejada) */
+  /* Outros estilos que você deseja aplicar quando o mouse está sobre o link */
+}
+
 /* BANNER INICIAL */
 
 .container {
@@ -209,7 +224,7 @@ header {
 
 .empresa {
   width: 70%;
-  margin: 6em auto 2em auto;
+  margin: 6em auto 10em auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -257,7 +272,8 @@ header {
   display: flex;
   text-align: center;
   line-height: 1.5em;
-  margin: 2em;
+  margin: 5em 2em 2em 2em;
+
   width: 70vw;
 }
 
@@ -275,7 +291,7 @@ header {
   font-size: 60px;
   font-weight: 700;
   color: var(--cor-branco);
-  padding: 0 1em;
+  padding: 0.5em 1em;
   text-align: center;
   line-height: 1.5em;
   text-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
@@ -394,7 +410,7 @@ header {
   text-align: center;
   line-height: 1.5em;
   margin: 0 2em;
-  width: 70vw;
+  width: 60vw;
 }
 
 /* CONTATO */
@@ -507,6 +523,10 @@ header {
   .botao__projeto2 {
     width: 50vw;
   }
+
+  .arrow {
+    display: none;
+  }
 }
 
 /*👉Versão Mobile Cel👈*/
@@ -579,7 +599,7 @@ header {
     width: 80vw;
   }
 
-  .continue {
+  .arrow {
     display: none;
   }
 

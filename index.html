@@ -23,19 +23,19 @@
 
     <header>
         <nav class="nav-bar">
-            <div class="logo">
-                <img src="img/peixe.svg" alt="" width="84px" height="52px">
+            <div class="logo"> <a href="index.html">
+                    <img src="img/peixe.svg" alt="Logomarca da empresa Studio Pez" width="84px" height="52px"></a>
             </div>
             <div class="nav-list">
-                <ul>
+                <ul class="menu">
                     <li class="nav-item">
-                        <a href="" class="nav-link">Início</a>
+                        <a href="#inicio" class="nav-link">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Desenvolvimento do Site</a>
+                        <a href="#desenvolvimento" class="nav-link">Desenvolvimento do Site</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Contato</a>
+                        <a href="#contact" class="nav-link">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -47,15 +47,15 @@
         </nav>
 
         <div class="mobile-menu">
-            <ul>
+            <ul class="menu">
                 <li class="nav-item">
-                    <a href="" class="nav-link">Início</a>
+                    <a href="#inicio" class="nav-link">Início</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Empresa</a>
+                    <a href="#desenvolvimento" class="nav-link">Desenvolvimento do Site</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Contato</a>
+                    <a href="#contact" class="nav-link">Contato</a>
                 </li>
             </ul>
         </div>
@@ -63,7 +63,7 @@
     </header>
 
     <!--BANNER INICIAL-->
-    <section class=" banner">
+    <section id="inicio" class=" banner">
         <h1 class="banner__titulo">
             <!--Websites modernos e funcionais, para o seu crescimento digital.-->
             <!--Websites feitos sob medida para sua marca decolar online.-->
@@ -204,7 +204,7 @@
     </div>
 
     <!--BANNER COMO O STUDIO TRABALHA-->
-    <section class="banner-studiotb">
+    <section id="desenvolvimento" class="banner-studiotb">
         <h1 class="banner__titulo-studio">Como o Studio <span class="verde">Pez</span> trabalha?</h1>
         <h2 class="banner__subtitulo-studiotb"> Nosso processo é muito flexível, trabalhamos de acordo com suas
             necessidades. Confira a
@@ -276,15 +276,16 @@
 
     <!--CHAMADA FINAL-->
 
-    <section class="banner_final">
+    <section id="contact" class="banner_final">
         <h2 class="banner__titulo2">Nos <span class="verde">desafie</span>!</h2>
-        <p class="banner__subtitulo">Queremos trabalhar na criação de algo realmente único para você e sua empresa.</p>
-        <button class="botao__projeto2" onclick="pressButton()" onclick="">
+        <p class="banner__subtitulo">Queremos trabalhar na criação de algo realmente único para você.
+        </p>
+        <!-- <button class="botao__projeto2" onclick="pressButton()" onclick="">
             <a class="botao__projeto-link2" href="#">Comece seu projeto!</a>
-        </button>
+        </button> -->
 
         <h2 class="banner__subtitulo-contato">
-            Prefere mandar mensagem via WhatsApp? <br>43 | 3344 - 6315
+            Vamos conversar via WhatsApp? <br>43 | 3344 - 6315
         </h2>
 
         <button class="botao__projeto2" onclick="pressButton()" onclick="">
@@ -295,9 +296,9 @@
             Ou qualquer outro assunto… <br>contato@studiopez.com.br
         </h2>
 
-        <button class="botao__projeto2" onclick="pressButton()" onclick="">
+        <!-- <button class="botao__projeto2" onclick="pressButton()" onclick="">
             <a class="botao__projeto-link2" href="">Enviar E-mail</a>
-        </button>
+        </button> -->
 
 
     </section>
@@ -306,7 +307,7 @@
 
     <!--FOOTER-->
 
-    <section class="rodape">
+    <section id="footer" class="rodape">
 
         <img class="logo_rodape" src="/img/logo.svg" alt="logomarca da empresa Studio Pez" width="200px" height="125px">
 
