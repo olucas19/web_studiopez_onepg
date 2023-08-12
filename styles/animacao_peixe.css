@@ -4,6 +4,8 @@
   position: relative;
   width: 100vw;
   height: 50vw;
+  opacity: 0; /* Começa invisível */
+  transition: opacity 1s;
 }
 
 .peixe {

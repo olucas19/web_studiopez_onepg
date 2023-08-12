@@ -9,6 +9,7 @@
   --cor-cinza-medio: #3a3a3a;
   --degrade-cinza: ;
   --cor-verde: #86bc25;
+  --cor-laranjado: #f25c05;
 
   --fonte-primaria: "Poppins", sans-serif;
 }
@@ -23,10 +24,20 @@ html {
 }
 
 body {
-  background: url(img/bg_logo_peixe_fundo_escuro.svg) top right no-repeat;
-  background-color: var(--cor-de-fundo-escuro);
   overflow-x: hidden;
   hyphens: none;
+  background: url(../img/bg_logo_peixe_fundo_escuro.svg) top no-repeat;
+  background-color: var(--cor-de-fundo-escuro);
+  animation: scrollBackground 40s linear infinite;
+}
+
+@keyframes scrollBackground {
+  0% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 strong {
@@ -143,6 +154,11 @@ header {
   text-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .botao__projeto {
   background-color: var(--cor-verde);
   border: none;
@@ -152,8 +168,18 @@ header {
   padding: 1em;
   margin: 2em 0 2em 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s ease, background-color 0.2s ease;
   cursor: pointer;
+}
+
+.botao_projeto:hover {
+}
+
+button {
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--cor-laranjado);
 }
 
 .botao__projeto-link {
@@ -162,6 +188,16 @@ header {
   font-weight: 500;
   color: var(--cor-cinza-escuro);
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+.botao__projeto-link:hover {
+  color: var(--cor-branco);
+}
+
+.vira_laranjado:hover {
+  color: var(--cor-laranjado);
+  transition: ease 0.5s;
 }
 
 .botao__projeto2 {
