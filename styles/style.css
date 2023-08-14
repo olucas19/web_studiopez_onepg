@@ -70,7 +70,7 @@ p {
 .sublinhado {
   text-decoration: underline;
 }
-/* CABEÇALHO 020823 */
+/* CABEÇALHO  */
 
 header {
   font-family: var(--fonte-primaria);
@@ -131,22 +131,16 @@ header {
 /* Estilo padrão do link do menu */
 .menu li a {
   /* color: #333; Cor do texto */
-  text-decoration: none; /* Remover sublinhado do link */
+  text-decoration: none;
   transition: color 0.2s; /* Transição suave de cor durante o hover */
 }
 
 /* Estilo do link do menu quando o mouse está sobre ele */
 .menu li a:hover {
-  color: var(
-    --cor-verde
-  ); /* Cor do texto no hover (pode ser alterada para a cor desejada) */
-  /* Outros estilos que você deseja aplicar quando o mouse está sobre o link */
+  color: var(--cor-verde);
 }
 
 /* BANNER INICIAL */
-
-.container {
-}
 
 .banner {
   width: 70%;
@@ -182,17 +176,6 @@ header {
   cursor: pointer;
 }
 
-.botao_projeto:hover {
-}
-
-.botao_laranjado {
-  transition: background-color 0.3s;
-}
-
-.botao_laranjado:hover {
-  background-color: var(--cor-laranjado);
-}
-
 .botao__projeto-link {
   font-family: var(--fonte-primaria);
   font-size: 32px;
@@ -206,34 +189,17 @@ header {
   color: var(--cor-branco);
 }
 
-.botao__projeto-link2:hover {
-  color: var(--cor-branco);
-}
-
 .vira_laranjado:hover {
   color: var(--cor-laranjado);
   transition: ease 0.5s;
 }
 
-.botao__projeto2 {
-  background-color: var(--cor-verde);
-  border: none;
-  width: 25%;
-  color: var(--cor-cinza-escuro);
-  border-radius: 20px;
-  padding: 1em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s ease, background-color 0.2s ease;
-  cursor: pointer;
-  margin: 1em 0 1em 0;
+.botao_laranjado {
+  transition: background-color 0.3s;
 }
 
-.botao__projeto-link2 {
-  font-family: var(--fonte-primaria);
-  font-size: 24px;
-  font-weight: 500;
-  color: var(--cor-cinza-escuro);
-  text-decoration: none;
+.botao_laranjado:hover {
+  background-color: var(--cor-laranjado);
 }
 
 .botao__projeto.pressed {
@@ -279,9 +245,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.logo_horizontal {
 }
 
 .empresa-texto {
@@ -337,6 +300,17 @@ header {
   align-items: center;
 }
 
+.banner__subtitulo {
+  font-family: var(--fonte-primaria);
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--cor-branco);
+  text-align: center;
+  line-height: 1.5em;
+  margin: 0 2em;
+  width: 60vw;
+}
+
 .banner__titulo-studio {
   font-family: var(--fonte-primaria);
   font-size: 60px;
@@ -355,7 +329,6 @@ header {
   color: var(--cor-branco);
   text-align: center;
   line-height: 1.5em;
-
   width: 50vw;
 }
 
@@ -367,7 +340,7 @@ header {
   height: 100vw;
 }
 
-/*CARDS E RODAPE*/
+/*CARDS*/
 
 .cards_processos {
   display: flex;
@@ -414,26 +387,6 @@ header {
 
 /* BANNER FINAL */
 
-.banner_final-stdprocess {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.banner__titulo2-stdprocess {
-  font-family: var(--fonte-primaria);
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--cor-branco);
-  padding: 0 1em;
-  margin: 2.5em 0 0 0;
-  text-align: center;
-  line-height: 1.5em;
-  text-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* BANNER FINAL */
-
 .banner_final {
   display: flex;
   flex-direction: column;
@@ -453,15 +406,29 @@ header {
   text-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.banner__subtitulo {
+.botao__projeto2 {
+  background-color: var(--cor-verde);
+  border: none;
+  width: 25%;
+  color: var(--cor-cinza-escuro);
+  border-radius: 20px;
+  padding: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
+  margin: 1em 0 1em 0;
+}
+
+.botao__projeto-link2 {
   font-family: var(--fonte-primaria);
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500;
+  color: var(--cor-cinza-escuro);
+  text-decoration: none;
+}
+
+.botao__projeto-link2:hover {
   color: var(--cor-branco);
-  text-align: center;
-  line-height: 1.5em;
-  margin: 0 2em;
-  width: 60vw;
 }
 
 /* CONTATO */
@@ -499,7 +466,6 @@ header {
   border: transparent;
   border-radius: 20px;
   background-color: var(--cor-cinza-medio);
-
   display: flex;
   flex-direction: column;
   font-family: var(--fonte-primaria);
@@ -654,30 +620,14 @@ header {
     display: none;
   }
 
+  /*CARDS*/
+
   .cards_titulo {
     font-size: 32px;
   }
 
   .banner-studiotb {
     margin-top: 10em;
-  }
-
-  .banner__titulo-studio {
-    font-size: 42px;
-    line-height: 1.25em;
-    margin-bottom: 0.25em;
-  }
-
-  .banner__subtitulo-studiotb {
-    width: 80vw;
-    font-weight: 300;
-  }
-
-  .banner__titulo2 {
-    text-align: center;
-    font-size: 48px;
-    line-height: 1em;
-    margin-bottom: 0.25em;
   }
 
   .cards_titulo {
@@ -690,6 +640,26 @@ header {
     font-size: 18px;
     line-height: 1.25em;
   }
+  .banner__titulo-studio {
+    font-size: 42px;
+    line-height: 1.25em;
+    margin-bottom: 0.25em;
+  }
+
+  .banner__subtitulo-studiotb {
+    width: 80vw;
+    font-weight: 300;
+  }
+
+  /*👉BANNER FINAL👈*/
+
+  .banner__titulo2 {
+    text-align: center;
+    font-size: 48px;
+    line-height: 1em;
+    margin-bottom: 0.25em;
+  }
+
   .banner__subtitulo {
     font-size: 24px;
   }
