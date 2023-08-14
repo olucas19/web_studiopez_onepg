@@ -185,11 +185,11 @@ header {
 .botao_projeto:hover {
 }
 
-button {
+.botao_laranjado {
   transition: background-color 0.3s;
 }
 
-button:hover {
+.botao_laranjado:hover {
   background-color: var(--cor-laranjado);
 }
 
@@ -203,6 +203,10 @@ button:hover {
 }
 
 .botao__projeto-link:hover {
+  color: var(--cor-branco);
+}
+
+.botao__projeto-link2:hover {
   color: var(--cor-branco);
 }
 
