@@ -37,19 +37,22 @@ html {
 body {
   overflow-x: hidden;
   hyphens: none;
-  background: url(../img/bg_logo_peixe_fundo_escuro.svg) top no-repeat;
+  background: url(../img/bg_logo_peixe_fundo_escuro.svg) top left no-repeat;
+  background-size: contain;
   background-color: var(--cor-de-fundo-escuro);
-  animation: scrollBackground 40s linear infinite;
+  /*👉 animation: scrollBackground 40s linear infinite;👈*/
+  max-width: 100%;
 }
 
-@keyframes scrollBackground {
+/* FIXME: CORRIGIR ANIMACAO QUE GERA BARRA DE ROLAGEM */
+/*👉@keyframes scrollBackground {
   0% {
-    background-position: 0 100%;
-  }
-  100% {
     background-position: 0 0;
   }
-}
+  100% {
+    background-position: 0 100%;
+  }
+}👈*/
 
 strong {
   font-weight: bold;
@@ -523,6 +526,10 @@ header {
 
 /*👉Versão Mobile tablet👈*/
 @media screen and (min-width: 720px) and (max-width: 1024px) {
+  body {
+    max-width: 100%;
+  }
+
   .banner__titulo {
     font-size: 60px;
   }
