@@ -40,19 +40,18 @@ body {
   background: url(../img/bg_logo_peixe_fundo_escuro.svg) top left no-repeat;
   background-size: contain;
   background-color: var(--cor-de-fundo-escuro);
-  /*👉 animation: scrollBackground 40s linear infinite;👈*/
-  max-width: 100%;
+  animation: scrollBackground 40s linear infinite;
 }
 
 /* FIXME: CORRIGIR ANIMACAO QUE GERA BARRA DE ROLAGEM */
-/*👉@keyframes scrollBackground {
+@keyframes scrollBackground {
   0% {
     background-position: 0 0;
   }
   100% {
     background-position: 0 100%;
   }
-}👈*/
+}
 
 strong {
   font-weight: bold;
